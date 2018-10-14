@@ -9,13 +9,13 @@
 
 ## Menu
 
-- ### [基本语法]()
+- ### [基本语法](https://github.com/hanqizheng/Go-Learning/tree/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
   - [GO的编译过程及相关命令]()
   - [GO的部分环境变量解析]()
   - [初识 Go多线程编程]()
   - [fmt的Reader接口实现io读]()
 
-- ### [例子]()
+- ### [例子](https://github.com/hanqizheng/Go-Learning/tree/master/exm)
   - [生成gif]()
   - [初试http]()
   - [socks5代理]()
