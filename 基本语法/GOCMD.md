@@ -1,4 +1,4 @@
-# GO的编译过程及相关命令
+# Go的编译过程及相关命令
 
 ## go run
 
@@ -93,12 +93,12 @@ mkdir -p /Users/YDZ/Ele_Project/clairstormeye/bin/
 mv $WORK/command-line-arguments/_obj/exe/a.out /Users/YDZ/Ele_Project/clairstormeye/bin/helloworld
 ```
 
-前面几步依旧和 go run 、go build 完全一致，只是最后一步的差别，go install 会把命令源码文件安装到当前工作区的 bin 目录（如果 GOPATH 下有多个工作区，就会放在 GOBIN 目录下）。如果是库源码文件，就会被安装到当前工作区的 pkg 的平台相关目录下。
+前面几步依旧和 go run 、go build 完全一致，只是最后一步的差别，go install 会把命令源码文件安装到当前工作区的 bin 目录（如果 GoPATH 下有多个工作区，就会放在 GoBIN 目录下）。如果是库源码文件，就会被安装到当前工作区的 pkg 的平台相关目录下。
 
 ## go get
 go get 命令用于从远程代码仓库（比如 Github ）上下载并安装代码包。
 
-**注意，go get 命令会把当前的代码包下载到 $GOPATH 中的第一个工作区的 src 目录中，并安装。**
+**注意，go get 命令会把当前的代码包下载到 $GoPATH 中的第一个工作区的 src 目录中，并安装。**
 
 go get 命令究竟做了些什么呢？我们还是来打印一下每一步的执行过程。
 
