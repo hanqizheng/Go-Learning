@@ -14,7 +14,7 @@
   - [GO的部分环境变量解析](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/GOENV.md)
   - [初识 Go多线程编程](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/goroutine.md)
   - [fmt的Reader接口实现io读](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/io.md)
-  - [interface]()
+  - [interface](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/interface.md)
 
 - ### [例子](https://github.com/hanqizheng/Go-Learning/tree/master/exm)
   - [生成gif](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gif.go)
