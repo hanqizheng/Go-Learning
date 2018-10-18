@@ -6,7 +6,11 @@ import (
 		"html/template"
 		"io/ioutil"
 		"encoding/xml"
+		"sync"
 )
+
+var wg sync.WaitGroup
+
 // SitemapIndex to 要抓取的内容结构
 type SitemapIndex struct {
 	Locations []string `xml:"sitemap>loc"`
@@ -30,28 +34,48 @@ type NewsAggPage struct {
 	Title string
 	News map[string]NewsMap
 }
-
-// NewsAggHandler to 新闻模板路由的Controller
-func newsAggHandler(w http.ResponseWriter, r *http.Request) {
-	var s SitemapIndex
-	var n News
-	newsMap := make(map[string]NewsMap)
-	resp, _ := http.Get("https://www.washingtonpost.com/news-sitemap-index.xml")
-	bytes, _ := ioutil.ReadAll(resp.Body)		
-	xml.Unmarshal(bytes, &s)
-
-	for _, Location := range s.Locations {
+// newsRoutine to
+func newsRoutine(c chan News, Location string) {
+		defer wg.Done()
+		var n News
 		resp, _ := http.Get(Location)
 		bytes, _ := ioutil.ReadAll(resp.Body)		
 		xml.Unmarshal(bytes, &n)
-		for idx := range n.Titles {
-			newsMap[n.Titles[idx]] = NewsMap{n.Keywords[idx], n.Locations[idx]}
-		}
-	}
+		resp.Body.Close()
 
-	p := NewsAggPage{ Title: "A News Template", News: newsMap }
-	t, _ := template.ParseFiles("basictemplating.html")
-	fmt.Println(t.Execute(w, p))
+		c <- n
+}
+
+// NewsAggHandler to 新闻模板路由的Controller
+func newsAggHandler(w http.ResponseWriter, r *http.Request) {
+		var s SitemapIndex
+
+		newsMap := make(map[string]NewsMap)
+		resp, _ := http.Get("https://www.washingtonpost.com/news-sitemap-index.xml")
+		bytes, _ := ioutil.ReadAll(resp.Body)		
+		xml.Unmarshal(bytes, &s)
+
+		resp.Body.Close()
+
+		queue := make(chan News, 30)
+
+		for _, Location := range s.Locations {
+				wg.Add(1)
+				go newsRoutine(queue, Location)
+		}
+		
+		wg.Wait()
+		close(queue)
+
+		for elem := range queue {
+				for idx := range elem.Titles {
+					newsMap[elem.Titles[idx]] = NewsMap{elem.Keywords[idx], elem.Locations[idx]}
+				}
+		}
+
+		p := NewsAggPage{ Title: "A News Template", News: newsMap }
+		t, _ := template.ParseFiles("basictemplating.html")
+		fmt.Println(t.Execute(w, p))
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
@@ -59,7 +83,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main()  {
-	http.HandleFunc("/", indexHandler)
-	http.HandleFunc("/agg/", newsAggHandler)
-	http.ListenAndServe(":8000", nil)
+		http.HandleFunc("/", indexHandler)
+		http.HandleFunc("/agg/", newsAggHandler)
+		http.ListenAndServe(":8000", nil)
 }
