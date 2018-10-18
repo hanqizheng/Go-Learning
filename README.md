@@ -19,5 +19,5 @@
   - [生成gif](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gif.go)
   - [初试http](https://github.com/hanqizheng/Go-Learning/blob/master/exm/http.go)
   - [socks5代理](https://github.com/hanqizheng/Go-Learning/blob/master/exm/socks5Proxy.go)
-  - [Go的一个简易爬虫(仍在完善)](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gotut.go)
+  - [Go的一个简易爬虫](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gotut/gotut.go)
 
