@@ -5,7 +5,7 @@ import (
 		"database/sql"
 		_ "github.com/go-sql-driver/mysql"
 )
-
+// User is 对应数据库的字段
 type User struct {
 		Name string `json:"Name"`
 }

@@ -46,7 +46,7 @@ func QueryTest(c *gin.Context)  {
 	})
 }
 
-// QueryTest is 测试Gin框架怎么接受params
+// ParamsTest is 测试Gin框架怎么接受params
 func ParamsTest(c *gin.Context)  {
 	name := c.Param("name")
 	age := c.Param("age")
