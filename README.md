@@ -26,4 +26,5 @@
   - [Go的一个简易爬虫](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gotut/gotut.go)
   - [MySQL操作](https://github.com/hanqizheng/Go-Learning/blob/master/exm/mysql.go)
   - [GinTest](https://github.com/hanqizheng/Go-Learning/blob/master/exm/ginTest.go)
+  - [Gin&MySql](https://github.com/hanqizheng/Go-Learning/tree/master/exm/gingin)
 
