@@ -119,7 +119,7 @@ fmt.Printf(bird)
 // {pigeon likes to perch on rocks {24 10}}
 ```
 
-### 自定义s属性名称
+### 自定义属性名称
 
 有时候并不像严格按照JSON中每个`key`的名称来定义`struct`中每个属性的名称，这个时候就可以用到`filed tags`来解决这个问题
 
