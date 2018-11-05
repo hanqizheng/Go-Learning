@@ -11,7 +11,7 @@ go env
 接下来，挑几个最常用的解释一下。
 
 ### GOROOT
-这个环境变量表示Go安装在自己电脑上的位置，我的GoROOT是`/usr/local/go`
+这个环境变量表示Go安装在自己电脑上的位置，我的GOROOT是`/usr/local/go`
 
 ### GOPATH
 这个环境变量表示Go语言工作区（的集合）
@@ -20,7 +20,7 @@ go env
 
 工作区一般包括三个文件夹，bin 、 pkg 、 src
 
-####　bin
+#### bin
 bin 文件夹是用来存放可执行文件，而这些可执行文件（mac 下是　executable文件，windows下是exe文件），都是通过`go install`命令安装，由Go命令源码文件生成的。至于命令源码文件是什么，一会儿会说到。
 
 `go env`可以显示出来所有与ｇｏ有管的环境变量，可以注意到有一个`GOBIN`的环境变量，就是设置这个bin文件夹路径的，如果没有设置`GOBIN`就是默认在`GOPATH`下的bin文件夹，如果设置了，就可以随自己设置。
