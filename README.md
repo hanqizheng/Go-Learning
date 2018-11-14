@@ -22,6 +22,7 @@
   - [import](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/import.md)
 
 - ### [例子](https://github.com/hanqizheng/Go-Learning/tree/master/exm)
+> 多写demo多练手
   - [生成gif](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gif.go)
   - [初试http](https://github.com/hanqizheng/Go-Learning/blob/master/exm/http.go)
   - [socks5代理](https://github.com/hanqizheng/Go-Learning/blob/master/exm/socks5Proxy.go)
