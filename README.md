@@ -9,7 +9,7 @@
 
 ## Menu
 
-- ### [基本语法](https://github.com/hanqizheng/Go-Learning/tree/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
+- ### [基础](https://github.com/hanqizheng/Go-Learning/tree/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
 > 从基本语法开始
   - [GO的编译过程及相关命令](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/GOCMD.md)
   - [GO的部分环境变量解析](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/GOENV.md)
