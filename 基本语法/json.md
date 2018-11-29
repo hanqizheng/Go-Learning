@@ -7,14 +7,14 @@ JSON是平时最常用的一种数据格式，那么Go怎么操作JSON呢？
 ## Go与JSON的数据类型对应关系
 
 
-| Go的数据类型              | 对应Json中的类型   |
-| ----------------------- | ---------------- |
-| bool,                   | JSON booleans    |
-| float64,                | JSON numbers     |
-| string,                 | JSON strings     |
-| []interface{},          | JSON arrays      |
-| map[string]interface{}, | JSON objects     |
-| nil                     | JSON null        |
+| Go的数据类型           | 对应Json中的类型 |
+| ---------------------- | ---------------- |
+| bool                   | JSON booleans    |
+| float64                | JSON numbers     |
+| string                 | JSON strings     |
+| []interface{}          | JSON arrays      |
+| map[string]interface{} | JSON objects     |
+| nil                    | JSON null        |
 
 
 ## Unmarshal
