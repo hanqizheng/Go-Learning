@@ -9,7 +9,7 @@
 
 ## Menu
 
-- ### [基础](https://github.com/hanqizheng/Go-Learning/tree/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
+### [基础](https://github.com/hanqizheng/Go-Learning/tree/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
 > 从基本语法开始
   - [GO的编译过程及相关命令](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/GOCMD.md)
   - [GO的部分环境变量解析](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/GOENV.md)
@@ -21,7 +21,7 @@
   - [JSON](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/json.md)
   - [import](https://github.com/hanqizheng/Go-Learning/blob/master/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/import.md)
 
-- ### [例子](https://github.com/hanqizheng/Go-Learning/tree/master/exm)
+### [例子](https://github.com/hanqizheng/Go-Learning/tree/master/exm)
 > 多写demo多练手
   - [生成gif](https://github.com/hanqizheng/Go-Learning/blob/master/exm/gif.go)
   - [初试http](https://github.com/hanqizheng/Go-Learning/blob/master/exm/http.go)
@@ -32,7 +32,7 @@
   - [Gin&MySql](https://github.com/hanqizheng/Go-Learning/tree/master/exm/gingin)
   - [Go&Mongodb](https://github.com/hanqizheng/Go-Learning/blob/master/exm/mongo.go)
 
-- ### [番外](https://github.com/hanqizheng/Go-Learning/tree/master/%E7%95%AA%E5%A4%96)
+### [番外](https://github.com/hanqizheng/Go-Learning/tree/master/%E7%95%AA%E5%A4%96)
 > 偷偷补课了
 - [Nginx](https://github.com/hanqizheng/Go-Learning/tree/master/%E7%95%AA%E5%A4%96/Nginx)
   - [begin](https://github.com/hanqizheng/Go-Learning/blob/master/%E7%95%AA%E5%A4%96/Nginx/Nginx.md)
